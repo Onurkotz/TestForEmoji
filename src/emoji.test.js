@@ -39,7 +39,6 @@ test("is copied?", () => {
     userEvent.click(smileEmoji);
     const input = screen.getByPlaceholderText("Search an emoji!");
     userEvent.paste(input, window.ClipboardItem);
-
     expect(input).toHaveValue();
     
 })
